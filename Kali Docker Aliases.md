@@ -2,6 +2,7 @@
 
 #DFIR
 alias volatility='docker run --name volatility --rm -v "$(pwd)":/dumps:rw,Z --privileged -it phocean/volatility'
+alias wireshark='docker run -d --name=wireshark --net=host --cap-add=NET_ADMIN -e PUID=1000 -e PGUID=1000 -e TZ=Europe/London -p 3000:3000 -v /home/roland/.wireshark:/config --restart unless-stopped linuxserver/wireshark'
 
 #GRC
 alias simplerisk='docker run --rm -d --name simplerisk -d -p 80:80 -p 443:443 simplerisk/simplerisk'
@@ -14,10 +15,13 @@ alias wpscan='docker run --name wpscan -it --rm -v $(PWD):/root fonalex45/projec
 alias wapiti='docker run --name wapiti --rm -it -w /data -v $(PWD):/root/.wapiti/  fonalex45/project-repo-1:kali-custom wapiti'
 
 #recon
-alias spiderfoot='docker run --name spiderfoot -d -p 5009:5001 -d fonalex45/project-repo-1:spiderfoot'
-alias nmap='docker run --name nmap --rm --net=host --mount source=data,destination=/root --privileged fonalex45/project-repo-1:kali-custom   nmap'
+alias spiderfoot='docker run -it --net=host fonalex45/project-repo-1:kali-custom spiderfoot -l 127.0.0.1:5009'
+alias nmap='docker run --name nmap --rm --net=host -v $(pwd):/data --privileged fonalex45/project-repo-1:kali-custom nmap'
 alias dnsenum='docker run --name dnsenum -it --rm -w /data -v data:/data fonalex45/project-repo-1:kali-custom dnsenum'
 alias dnsrecon='docker run --name dnsrecon -it --rm fonalex45/project-repo-1:kali-custom dnsrecon'
+alias amass='docker run -it --rm -v $(pwd):/.config/amass fonalex45/project-repo-1:kali-custom amass'
+alias smbmap='docker run -it --rm -v $(pwd):/data fonalex45/project-repo-1:kali-custom smbmap'
+
 
 #enumeration
 alias msfvenom='docker run --name msfvenom -it --rm -w /data -v data:/data fonalex45/project-repo-1:kali-custom msfvenom'
@@ -25,6 +29,8 @@ alias dirb='docker run -it --rm -w /data -v $(pwd):/data fonalex45/project-repo-
 alias ffuf='docker run --name ffuff -it --rm -w /data -v $(pwd):/data fonalex45/project-repo-1:kali-custom ffuf'
 alias gobuster='docker run -it --rm -w /data -v $(pwd):/data fonalex45/project-repo-1:kali-custom gobuster'
 alias snmpcheck='docker run -it --rm --name snmpcheck -v data:/data fonalex45/project-repo-1:kali-custom snmpcheck'
+alias exiftool='docker run --rm -it -v $(pwd):/tmp fonalex45/project-repo-1:kali-custom exiftool'
+
 
 #exploit
 alias kali='docker run --name kali-shell --rm -it -v /home/roland/.kali:/root/ fonalex45/project-repo-1:kali-custom'
