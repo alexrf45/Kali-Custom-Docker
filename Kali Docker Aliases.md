@@ -1,16 +1,16 @@
 #docker aliases
 
-#DFIR
+# DFIR
 
 alias volatility='docker run --name volatility --rm -v "$(pwd)":/dumps:rw,Z --privileged -it phocean/volatility'
 
 alias wireshark='docker run -d --name=wireshark --net=host --cap-add=NET_ADMIN -e PUID=1000 -e PGUID=1000 -e TZ=Europe/London -p 3000:3000 -v /home/roland/.wireshark:/config --restart unless-stopped linuxserver/wireshark'
 
-#GRC
+# GRC
 
 alias simplerisk='docker run --rm -d --name simplerisk -d -p 80:80 -p 443:443 simplerisk/simplerisk'
 
-#webapp
+# webapp
 
 alias juiceshop='docker run --rm --name juiceshop -d -p 3000:3000 bkimminich/juice-shop'
 
@@ -22,7 +22,7 @@ alias wpscan='docker run --name wpscan -it --rm -v $(PWD):/root fonalex45/projec
 
 alias wapiti='docker run --name wapiti --rm -it -w /data -v $(PWD):/root/.wapiti/  fonalex45/project-repo-1:kali-custom wapiti'
 
-#recon
+# recon
 
 alias spiderfoot='docker run -it --net=host fonalex45/project-repo-1:kali-custom spiderfoot -l 127.0.0.1:5009'
 
@@ -37,7 +37,7 @@ alias amass='docker run -it --rm -v $(pwd):/.config/amass fonalex45/project-repo
 alias smbmap='docker run -it --rm -v $(pwd):/data fonalex45/project-repo-1:kali-custom smbmap'
 
 
-#enumeration
+# enumeration
 
 alias msfvenom='docker run --name msfvenom -it --rm -w /data -v data:/data fonalex45/project-repo-1:kali-custom msfvenom'
 
@@ -52,7 +52,7 @@ alias snmpcheck='docker run -it --rm --name snmpcheck -v data:/data fonalex45/pr
 alias exiftool='docker run --rm -it -v $(pwd):/tmp fonalex45/project-repo-1:kali-custom exiftool'
 
 
-#exploit
+# exploit
 
 alias kali='docker run --name kali-shell --rm -it -v /home/roland/.kali:/root/ fonalex45/project-repo-1:kali-custom'
 alias msfconsole='docker run --name msfconsole -it --rm --net=host  -v ~/.msf4:/root/.msf4 -v /tmp/msf:/tmp/data fonalex45/project-repo-1:kali-custom msfconsole'
