@@ -1,4 +1,4 @@
-# Custome Kali Docker Image:
+# Custom Kali Docker Image:
 
 [Docker Hub Image](https://hub.docker.com/repository/docker/fonalex45/project-repo-1)
 
