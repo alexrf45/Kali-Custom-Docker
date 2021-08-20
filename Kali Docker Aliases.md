@@ -1,6 +1,6 @@
 # **docker aliases**
 
-# Webapp
+# webapp
 
 alias juiceshop='docker run --rm --name juiceshop -d -p 3000:3000 bkimminich/juice-shop'
 
@@ -8,11 +8,11 @@ alias burp='xhost + && docker run --name burpsuite -d -it --rm -e DISPLAY=$DISPL
 
 alias sqlmap='docker run --name sqlmap -it --rm --net=host -w /data -v ~/.sqlmap:/root/.sqlmap -v $PWD:/data fonalex45/project-repo-1:kali-custom sqlmap'
 
-alias wpscan='docker run --name wpscan -it --rm -v $(PWD):/root fonalex45/project-repo-1:kali-custom wpscan'
+alias wpscan='docker run --name wpscan -it --rm -v $(pwd):/root --net=host fonalex45/project-repo-1:kali-custom wpscan'
 
-alias wapiti='docker run --name wapiti --rm -it -w /data -v $(PWD):/root/.wapiti/  fonalex45/project-repo-1:kali-custom wapiti'
+alias wapiti='docker run --name wapiti --rm -it -w /data -v $(PWD):/root/.wapiti/  --net=host fonalex45/project-repo-1:kali-custom wapiti'
 
-# Recon
+# recon
 
 alias spiderfoot='docker run -it --net=host fonalex45/project-repo-1:kali-custom spiderfoot -l 127.0.0.1:5009'
 
@@ -27,15 +27,15 @@ alias amass='docker run -it --rm -v $(pwd):/.config/amass fonalex45/project-repo
 alias smbmap='docker run -it --rm -v $(pwd):/data fonalex45/project-repo-1:kali-custom smbmap'
 
 
-# Enumeration
+# enumeration
 
 alias venom='docker run --name msfvenom -it --rm -w /data -v data:/data fonalex45/project-repo-1:kali-custom msfvenom'
 
-alias dirb='docker run -it --rm -w /data -v $(pwd):/data fonalex45/project-repo-1:kali-custom dirb'
+alias dirb='docker run -it --rm -w /data -v $(pwd):/data --net=host fonalex45/project-repo-1:kali-custom dirb'
 
-alias ffuf='docker run --name ffuff -it --rm -w /data -v $(pwd):/data fonalex45/project-repo-1:kali-custom ffuf'
+alias ffuf='docker run --name ffuff -it --rm -w /data -v $(pwd):/data --net=host fonalex45/project-repo-1:kali-custom ffuf'
 
-alias gobuster='docker run -it --rm -w /data -v $(pwd):/data fonalex45/project-repo-1:kali-custom gobuster'
+alias gobuster='docker run -it --rm -w /data -v $(pwd):/data --net=host fonalex45/project-repo-1:kali-custom gobuster'
 
 alias snmpcheck='docker run -it --rm --name snmpcheck -v data:/data fonalex45/project-repo-1:kali-custom snmpcheck'
 
@@ -45,7 +45,7 @@ alias e4l='docker run --rm -it fonalex45/project-repo-1:kali-custom enum4linux'
 
 alias 161='docker run --rm -it fonalex45/project-repo-1:kali-custom onesixtyone'
 
-# Exploit
+# exploit
 
 alias kali='docker run --name kali-shell --rm -it -v /home/roland/.kali:/root/ fonalex45/project-repo-1:kali-custom'
 
