@@ -6,7 +6,7 @@ alias juiceshop='docker run --rm --name juiceshop -d -p 3000:3000 bkimminich/jui
 
 alias burp='xhost + && docker run --name burpsuite -d -it --rm -e DISPLAY=$DISPLAY -v $HOME/.Xauthority:/root/.Xauthority --net=host fonalex45/project-repo-1:kali-custom java -jar /usr/bin/burpsuite'
 
-alias sqlmap='docker run --name sqlmap -it --rm --net=host -v ~/.sqlmap:/root/.sqlmap -v $PWD:/data fonalex45/project-repo-1:kali-custom sqlmap'
+alias sqlmap='docker run --name sqlmap -it --rm --net=host -w /data -v ~/.sqlmap:/root/.sqlmap -v $PWD:/data fonalex45/project-repo-1:kali-custom sqlmap'
 
 alias wpscan='docker run --name wpscan -it --rm -v $(pwd):/root --net=host fonalex45/project-repo-1:kali-custom wpscan'
 
