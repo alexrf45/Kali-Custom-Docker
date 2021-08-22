@@ -16,3 +16,9 @@ UPDATE 2021-08-20:
 - Updated volume for kali-shell with $USER
 - I have found it is easier to use the docker cp command to pull artifacts from the running container. 
 - Please reference https://www.tecmint.com/set-permanent-dns-nameservers-in-ubuntu-debian/ for how to fix dns in unbuntu to resolve subdomains from /etc/hosts. 
+
+
+UPDATE 2021-08-22:
+- Small update: added dnsutils for dig and nslookup. 
+  - This is more of a preference than a necessity. These are very light utilities and normally better suited on the host machine.
+- Just an observation: The kali image can run the majority of utilities such as smbclient or rpcclient. 
