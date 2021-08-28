@@ -23,3 +23,8 @@ UPDATE 2021-08-22:
   - This is more of a preference than a necessity. These are very light utilities and normally better suited on the host machine.
 - Just an observation: The kali image can run the majority of utilities such as smbclient or rpcclient. 
 - Added some custom aliases for daily docker usage. 
+
+UPDATE 2021-08-28:
+- Added an two aliases for nmap:
+  - nmap1: -sC -sV -p- 
+  - nmapdiscover: --script discovery -p-
