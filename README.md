@@ -25,6 +25,6 @@ UPDATE 2021-08-22:
 - Added some custom aliases for daily docker usage. 
 
 UPDATE 2021-08-28:
-- Added an two aliases for nmap:
-  - nmap1: -sC -sV -p- 
+- Added two aliases for nmap:
+  - nmap1: -sC -sV -Pn -p- 
   - nmapdiscover: --script discovery -p-
