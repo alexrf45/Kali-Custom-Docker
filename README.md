@@ -28,3 +28,7 @@ UPDATE 2021-08-28:
 - Added two aliases for nmap:
   - nmap1: -sC -sV -Pn -p- 
   - nmapdiscover: --script discovery -p-
+  
+
+UPDATE 2021-08-29:
+- I'm having issues getting the container to read files from the host so I recommend using the kali-shell for any tools that utilize user lists and custom wordlists generated on     the host. I will find a fix hopefully soon. My goal is to save on keystrokes and streamline ops.
