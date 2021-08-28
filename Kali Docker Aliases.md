@@ -18,6 +18,10 @@ alias spiderfoot='docker run -it --net=host fonalex45/project-repo-1:kali-custom
 
 alias nmap='docker run --name nmap --rm --net=host  --privileged fonalex45/project-repo-1:kali-custom nmap'
 
+alias nmap1='docker run --name nmap --rm --net=host -v "$(pwd)":/data --privileged fonalex45/project-repo-1:kali-custom nmap -sC -sV -Pn -p-'
+
+alias nmapdiscover='docker run --name nmap --rm --net=host -v "$(pwd)":/data --privileged fonalex45/project-repo-1:kali-custom nmap --script discovery -p-'
+
 alias dnsenum='docker run --name dnsenum -it --rm -w /data -v data:/data fonalex45/project-repo-1:kali-custom dnsenum'
 
 alias dnsrecon='docker run --name dnsrecon -it --rm fonalex45/project-repo-1:kali-custom dnsrecon'
