@@ -32,3 +32,6 @@ UPDATE 2021-08-28:
 
 UPDATE 2021-08-29:
 - I'm having issues getting the container to read files from the host so I recommend using the kali-shell for any tools that utilize user lists and custom wordlists generated on     the host. I will find a fix hopefully soon. My goal is to save on keystrokes and streamline ops.
+
+UPDATE 2021-08-30:
+- Boom so heads up for folks that aren't super proficient with Docker. Ensure when you set the volume that you know where the volume is placed on your host. This will allow you to place files there needed by containers such as crackmapexec that will read from that volume for username lists and wordlists. I adjusted the aliases accordingly. Happy Hacking!
