@@ -66,7 +66,7 @@ alias chisel='docker run -it --rm --net=host fonalex45/project-repo-1:kali-custo
 
 alias responder='docker run -it --rm --net=host fonalex45/project-repo-1:kali-custom responder'
 
-alias evil='docker run -it --rm -v data:/data fonalex45/project-repo-1:kali-custom evil-winrm'
+alias evil='docker run -it --rm -w /data -v data:/data fonalex45/project-repo-1:kali-custom evil-winrm'
 
 alias crunch='docker run -it --rm --name crunch -v data:/data fonalex45/project-repo-1:kali-custom crunch'
 
