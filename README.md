@@ -35,3 +35,5 @@ UPDATE 2021-08-29:
 
 UPDATE 2021-08-30:
 - Boom so heads up for folks that aren't super proficient with Docker. Ensure when you set the volume that you know where the volume is placed on your host. This will allow you to place files there needed by containers such as crackmapexec that will read from that volume for username lists and wordlists. I adjusted the aliases accordingly. Happy Hacking!
+UPDATE 2021-09-04: 
+- Added rlwrap to the image for use with netcat 
