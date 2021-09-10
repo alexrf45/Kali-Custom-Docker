@@ -31,7 +31,7 @@ alias amass='docker run -it --rm -v "$(pwd)":/.config/amass fonalex45/project-re
 
 alias smbmap='docker run -it --rm -v "$(pwd)":/data fonalex45/project-repo-1:kali-custom smbmap'
 
-alias autorecon='docker run -it --rm -v /autorecon:/root fonalex45/project-repo-1:kali-custom autorecon'
+alias autorecon='docker run -it --rm -v autorecon:/autorecon fonalex45/project-repo-1:kali-custom autorecon --output /autorecon'
 
 
 # enumeration
