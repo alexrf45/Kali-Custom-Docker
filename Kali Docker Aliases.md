@@ -10,7 +10,7 @@ alias sqlmap='docker run  -it --rm --net=host -w /data -v ~/.sqlmap:/root/.sqlma
 
 alias wpscan='docker run  -it --rm -v ctf:/root --net=host fonalex45/project-repo-1:kali-custom wpscan'
 
-alias wapiti='docker run  -it -v ctf:/home/.wapiti/generated_report/ --net=host fonalex45/project-repo-1:kali-custom wapiti'
+alias wapiti='docker run  --rm -it -v ctf:/home/.wapiti/generated_report/ --net=host fonalex45/project-repo-1:kali-custom wapiti'
 
 
 
@@ -30,6 +30,8 @@ alias dnsrecon='docker run --name dnsrecon -it --rm fonalex45/project-repo-1:kal
 alias amass='docker run -it --rm -v "$(pwd)":/.config/amass fonalex45/project-repo-1:kali-custom amass'
 
 alias smbmap='docker run -it --rm -v "$(pwd)":/data fonalex45/project-repo-1:kali-custom smbmap'
+
+alias autorecon='docker run -it --rm -v /autorecon:/root fonalex45/project-repo-1:kali-custom autorecon'
 
 
 # enumeration
