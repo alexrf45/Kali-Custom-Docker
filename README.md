@@ -10,5 +10,5 @@ This is custom kali docker image that saves on installation time of tools and po
 
 ## 
 
-UPDATE 2021-09-10:
-- Added Autorecon to the Docker image.
+UPDATE 2021-09-13: 
+ - Due to the image size creep, 10G+ is not ideal, I am researching breaking up tools into seperate images to provide additional flexibility.
