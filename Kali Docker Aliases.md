@@ -17,11 +17,11 @@ alias wapiti='docker run  --rm -it -v ctf:/home/.wapiti/generated_report/ --net=
 # recon
 alias spiderfoot='docker run -it --net=host fonalex45/project-repo-1:kali-custom spiderfoot -l 127.0.0.1:5009'
 
-alias nmap='docker run --name nmap --rm --net=host -v "$(pwd)":/data --privileged fonalex45/project-repo-1:kali-custom nmap'
+alias nmap='docker run --name nmap --rm --net=host -v "$(pwd)":/data  fonalex45/project-repo-1:kali-custom nmap'
 
-alias nmap1='docker run --name nmap --rm --net=host -v "$(pwd)":/data --privileged fonalex45/project-repo-1:kali-custom nmap -sC -sV -Pn -p-'
+alias nmap1='docker run --name nmap --rm --net=host -v "$(pwd)":/data  fonalex45/project-repo-1:kali-custom nmap -sC -sV -Pn -p-'
 
-alias nmapdiscover='docker run --name nmap --rm --net=host -v "$(pwd)":/data --privileged fonalex45/project-repo-1:kali-custom nmap --script discovery -p-'
+alias nmapdiscover='docker run --name nmap --rm --net=host -v "$(pwd)":/data fonalex45/project-repo-1:kali-custom nmap --script discovery -p-'
 
 alias dnsenum='docker run --name dnsenum -it --rm -v "$(pwd)":/data fonalex45/project-repo-1:kali-custom dnsenum'
 
@@ -60,7 +60,7 @@ alias rpcclient='docker run --rm -it fonalex45/project-repo-1:kali-custom rpccli
 
 # exploit
 
-alias kali='docker run --rm -it -e HOME=/home -v /home/roland/.kali:/root/ fonalex45/project-repo-1:kali-custom'
+alias kali='docker run --rm -it -e HOME=/home -v /home/$USER/.kali:/root/ fonalex45/project-repo-1:kali-custom'
 
 alias msf='docker run -it --rm --net=host  -v ~/.msf4:/root/.msf4 -v /tmp/msf:/tmp/data fonalex45/project-repo-1:kali-custom msfconsole'
 
