@@ -11,5 +11,3 @@ USER kali
 RUN mkdir -p /home/kali/data
 
 WORKDIR /home/kali/data
-
-CMD ["whoami"]
