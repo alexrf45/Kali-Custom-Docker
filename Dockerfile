@@ -9,7 +9,11 @@ RUN groupadd --gid 1001 kali \
 
 RUN chown -R kali:kali /home/kali/
 
-RUN echo 'kali  ALL=(ALL) /bin/su' >>  /etc/sudoers
+RUN echo kali:kali | chpasswd
+
+RUN usermod -aG sudo kali
+
+RUN echo 'kali  ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers
 
 WORKDIR /home/kali/
 
