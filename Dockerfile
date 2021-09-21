@@ -12,3 +12,5 @@ RUN chown -R kali:kali /home/kali/
 RUN echo 'kali  ALL=(ALL) /bin/su' >>  /etc/sudoers
 
 WORKDIR /home/kali/
+
+USER kali
