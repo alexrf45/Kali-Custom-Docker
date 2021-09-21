@@ -2,7 +2,7 @@
 
 [Docker Hub Image](https://hub.docker.com/repository/docker/fonalex45/project-repo-1)
 
-This is custom repo of kali docker images that save installation time and potential dependencies issues. I add to the image every so often as I discover more tools or find a better alias for a particular container. Please feel free to fork and modify to your liking. Thank you!!!
+This is custom repo of kali docker images that save installation time and potential dependencies issues. I add to the images every so often as I discover more tools or find a better alias for a particular container. Please feel free to fork and modify to your liking. Thank you!!!
 
 The Dockerfile is for the base image. Please visit the Docker Hub to pull down built images.
 
