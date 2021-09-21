@@ -2,7 +2,9 @@
 
 [Docker Hub Image](https://hub.docker.com/repository/docker/fonalex45/project-repo-1)
 
-This is custom kali docker image that saves on installation time of tools and potential dependencies issues. I add to the image every so often as I discover more tools or find a better alias for a particular container. Please feel free to fork and modify to your liking. Thank you!!!
+This is custom repo of kali docker images that save installation time and potential dependencies issues. I add to the image every so often as I discover more tools or find a better alias for a particular container. Please feel free to fork and modify to your liking. Thank you!!!
+
+The Dockerfile is for the base image. Please visit the Docker Hub to pull down built images.
 
 ## Tested on: Ubuntu 20.04-2, Debian 10+, Xubuntu 20.04.2 and ubuntu-budgie-20.04
 
@@ -11,7 +13,7 @@ This is custom kali docker image that saves on installation time of tools and po
 ##
 
 UPDATE 2021-09-13:
- - Due to the image size creep, 10G+ is not ideal, I am researching breaking up tools into seperate images to provide additional flexibility.
+ - Due to the uncompressed image size creep, 10G+ is not ideal, I am breaking up tools into separate images to provide additional flexibility.
 
 UPDATE 2021-09-20:
- - Burpsuite has it's own image and a kali base image with a sudo user. 
+ - Burpsuite has it's own image and a kali base image with a sudo user.
