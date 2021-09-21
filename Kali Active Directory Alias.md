@@ -1,13 +1,13 @@
 # **docker aliases**
 
-alias e4l='docker run --rm -it fonalex45/project-repo-1:kali-custom enum4linux'
+alias e4l='docker run --rm -it fonalex45/project-repo-1:kali-AD enum4linux'
 
-alias smbclient='docker run --rm -it fonalex45/project-repo-1:kali-custom smbclient'
+alias smbclient='docker run --rm -it fonalex45/project-repo-1:kali-AD smbclient'
 
-alias rpcclient='docker run --rm -it fonalex45/project-repo-1:kali-custom rpcclient'
+alias rpcclient='docker run --rm -it fonalex45/project-repo-1:kali-AD rpcclient'
 
-alias cme='docker run -it --rm --net=host -v data:/home fonalex45/project-repo-1:kali-custom crackmapexec'
+alias cme='docker run -it --rm --net=host -v data:/home fonalex45/project-repo-1:kali-AD crackmapexec'
 
-alias responder='docker run -it --rm --net=host fonalex45/project-repo-1:kali-custom responder'
+alias responder='docker run -it --rm --net=host fonalex45/project-repo-1:kali-AD responder'
 
-alias smbmap='docker run -it --rm -v "$(pwd)":/data fonalex45/project-repo-1:kali-custom smbmap'
+alias smbmap='docker run -it --rm -v "$(pwd)":/data fonalex45/project-repo-1:kali-AD smbmap'
