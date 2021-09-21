@@ -2,8 +2,6 @@
 
 # webapp
 
-alias juiceshop='docker run --rm --name juiceshop -d -p 3000:3000 bkimminich/juice-shop'
-
 alias burp='xhost + && docker run --name burpsuite -d -it --rm -e DISPLAY=$DISPLAY -v $HOME/.Xauthority:/root/.Xauthority -v ctf:/root --net=host fonalex45/project-repo-1:kali-custom burpsuite'
 
 alias sqlmap='docker run  -it --rm --net=host -w /data -v ~/.sqlmap:/root/.sqlmap -v $(pwd):/data fonalex45/project-repo-1:kali-custom sqlmap'
@@ -11,7 +9,6 @@ alias sqlmap='docker run  -it --rm --net=host -w /data -v ~/.sqlmap:/root/.sqlma
 alias wpscan='docker run  -it --rm -v ctf:/root --net=host fonalex45/project-repo-1:kali-custom wpscan'
 
 alias wapiti='docker run  --rm -it -v ctf:/home/.wapiti/generated_report/ --net=host fonalex45/project-repo-1:kali-custom wapiti'
-
 
 
 # recon
