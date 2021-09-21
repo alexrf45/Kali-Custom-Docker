@@ -1,7 +1,7 @@
 FROM kalilinux/kali-rolling
 
 RUN apt-get update \
-    && apt-get -y install locate wget curl man git zsh sudo
+    && apt-get -y install locate wget curl man git sudo
 
 RUN groupadd --gid 1001 kali \
     && useradd --home-dir /home/kali --create-home --uid 1001 \
