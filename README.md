@@ -14,4 +14,4 @@ UPDATE 2021-09-13:
  - Due to the image size creep, 10G+ is not ideal, I am researching breaking up tools into seperate images to provide additional flexibility.
 
 UPDATE 2021-09-20:
- - Burpsuite has it's own image. I am working on a kalilinux base image running as non root
+ - Burpsuite has it's own image and a kali base image with a sudo user. 
