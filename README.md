@@ -6,6 +6,8 @@ This is custom repo of kali docker images that save installation time and potent
 
 The Dockerfile is for the base image. Please visit the Docker Hub to pull down built images.
 
+There are various images depending on need. 
+
 ## Tested on: Ubuntu 20.04-2, Debian 10+, Xubuntu 20.04.2 and ubuntu-budgie-20.04
 
 ## I highly recommend installing this on a lightweight Linux distro to reduce overall VM size. Less complexity = more time for fun!
