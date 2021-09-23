@@ -14,4 +14,4 @@ alias sqlmap='docker run  -it --rm --net=host -w /data -v ~/.sqlmap:/root/.sqlma
 
 alias wpscan='docker run  -it --rm -v ctf:/root --net=host fonalex45/project-repo-1:kali-webapp wpscan'
 
-alias wapiti='docker run  --rm -it -v ctf:/home/.wapiti/generated_report/ --net=host fonalex45/project-repo-1:kali-webapp wapiti'
+alias wapiti='docker run --rm -it -v ctf:/root/.wapiti/generated_report/ --net=host fonalex45/project-repo-1:kali-webapp sudo wapiti'
