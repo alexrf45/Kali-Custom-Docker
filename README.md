@@ -14,8 +14,5 @@ Place the aliases in .bashrc or .zshrc, then refresh the shell: . ~/.bashrc or .
 
 ##
 
-UPDATE 2021-09-13:
- - Due to the uncompressed image size creep, 10G+ is not ideal, I am breaking up tools into separate images to provide additional flexibility.
-
-UPDATE 2021-09-20:
- - Burpsuite has it's own image and a kali base image with a sudo user.
+UPDATE 2021-09-30: 
+ - Project is stable. I will not be making any updates for the time being due to other studies.
