@@ -13,7 +13,7 @@ RUN echo kali:kali | chpasswd
 
 RUN usermod -aG sudo kali
 
-RUN echo 'kali  ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers
+RUN echo 'kali  ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/kali
 
 WORKDIR /home/kali/
 
