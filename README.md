@@ -14,5 +14,5 @@ Place the aliases in .bashrc or .zshrc, then refresh the shell: . ~/.bashrc or .
 
 ##
 
-UPDATE 2021-09-30: 
- - Project is stable. I will not be making any updates for the time being due to other studies.
+UPDATE 2021-10-15: 
+ - I made a few small changes to the aliases and updated packages. 
