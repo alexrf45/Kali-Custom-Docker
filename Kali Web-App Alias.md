@@ -15,3 +15,9 @@ alias sqlmap='docker run  -it --rm --net=host -v ~/.sqlmap:/root/.sqlmap  fonale
 alias wpscan='docker run  -it --rm -v ctf:/root --net=host fonalex45/project-repo-1:kali-webapp wpscan'
 
 alias wapiti='docker run --rm -it -v ctf:/root/.wapiti/generated_report/ --net=host fonalex45/project-repo-1:kali-webapp sudo wapiti'
+
+alias snmpwalk='docker run --rm -it --net=host fonalex45/project-repo-1:kali-webapp snmpcheck'
+
+alias snmpwalk='docker run --rm -it --net=host fonalex45/project-repo-1:kali-webapp snmpenum'
+
+alias snmpwalk='docker run --rm -it --net=host fonalex45/project-repo-1:kali-webapp snmpwalk'
