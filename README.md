@@ -16,3 +16,6 @@ Place the aliases in .bashrc or .zshrc, then refresh the shell: . ~/.bashrc or .
 
 UPDATE 2021-10-15: 
  - I made a few small changes to the aliases, updated packages, fixed sudo and default password.
+
+UPDATE 2021-10-18:
+ - snmpcheck is degraded due to a perl module. Fix action on the way. 
