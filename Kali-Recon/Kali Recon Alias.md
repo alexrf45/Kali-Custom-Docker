@@ -7,3 +7,13 @@ alias dnsrecon='docker run --name dnsrecon -it --rm fonalex45/project-repo-1:kal
 alias nmap='docker run --name nmap --rm --net=host -v "$(pwd)":/data  fonalex45/project-repo-1:kali-recon nmap'
 
 alias spiderfoot='docker run -it --net=host fonalex45/project-repo-1:kali-recon spiderfoot -l 127.0.0.1:5009'
+
+## Additional tools: 
+
+- amass 
+- recon-ng 
+- whatweb 
+- dnsutils 
+- inetutils-tools 
+- masscan 
+- nbtscan 
