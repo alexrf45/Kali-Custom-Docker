@@ -4,7 +4,7 @@
 
 This is custom repo of kali docker images that save installation time and potential dependencies issues. I add to the images every so often as I discover more tools or find a better alias for a particular container. Please feel free to fork and modify to your liking.
 
-## Tested on: Ubuntu 20.04-2, Debian 10+, Xubuntu 20.04.2 and ubuntu-budgie-20.04
+## Fully Tested on: Debian 11
 
 ## I highly recommend installing this on a lightweight Linux distro to reduce overall VM size. Less complexity = more time for fun!
 
