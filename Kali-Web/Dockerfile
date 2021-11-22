@@ -17,6 +17,6 @@ RUN echo 'kaliweb  ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/kaliweb
 
 WORKDIR /home/kaliweb/
 
-USER kali
+USER kaliweb
 
 RUN sudo apt update && sudo apt install -y burpsuite crunch dirb dirsearch ffuf gobuster snmpenum sqlmap wapiti wpscan seclists
