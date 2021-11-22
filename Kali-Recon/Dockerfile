@@ -1,22 +1,22 @@
 FROM kalilinux/kali-rolling
 
 RUN apt-get update \
-    && apt-get -y install locate wget curl aria2 man git sudo
+    && apt-get -y install wget curl aria2 man sudo
 
-RUN groupadd --gid 1001 kali \
-    && useradd --home-dir /home/kali --create-home --uid 1001 \
-      --gid 1001 --shell /bin/bash --skel /dev/null kali
+RUN groupadd --gid 1004 recon \
+    && useradd --home-dir /home/recon --create-home --uid 1004 \
+      --gid 1004 --shell /bin/bash --skel /dev/null recon
 
-RUN chown -R kali:kali /home/kali/
+RUN chown -R recon:recon /home/recon/
 
-RUN echo kali:kali | chpasswd
+RUN echo recon:kali | chpasswd
 
-RUN usermod -aG sudo kali
+RUN usermod -aG sudo recon
 
-RUN echo 'kali  ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/kali
+RUN echo 'recon  ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/recon
 
-WORKDIR /home/kali/
+WORKDIR /home/recon/
 
-USER kali
+USER recon
 
 RUN sudo apt install -y dnsenum dnsrecon nmap spiderfoot amass recon-ng whatweb dnsutils inetutils-tools masscan nbtscan 

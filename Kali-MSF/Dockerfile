@@ -1,22 +1,22 @@
 FROM kalilinux/kali-rolling
 
 RUN apt-get update \
-    && apt-get -y install locate wget curl man git sudo
+    && apt-get -y install wget curl sudo
 
-RUN groupadd --gid 1001 kali \
-    && useradd --home-dir /home/kali --create-home --uid 1001 \
-      --gid 1001 --shell /bin/bash --skel /dev/null kali
+RUN groupadd --gid 1007 msf \
+    && useradd --home-dir /home/msf --create-home --uid 1007 \
+      --gid 1007 --shell /bin/bash --skel /dev/null msf 
 
-RUN chown -R kali:kali /home/kali/
+RUN chown -R msf:msf /home/msf/
 
-RUN echo kali:kali | chpasswd
+RUN echo msf:kali | chpasswd
 
-RUN usermod -aG sudo kali
+RUN usermod -aG sudo msf
 
-RUN echo 'kali  ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/kali
+RUN echo 'msf ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/msf 
 
-WORKDIR /home/kali/
+WORKDIR /home/msf/
 
-USER kali
+USER msf
 
 RUN sudo apt install -y metasploit-framework
