@@ -1,21 +1,21 @@
 FROM kalilinux/kali-rolling
 
 RUN apt-get update \
-    && apt-get -y install locate wget curl man git sudo aria2
+    && apt-get -y install wget curl man sudo
 
-RUN groupadd --gid 1001 kali \
-    && useradd --home-dir /home/kali --create-home --uid 1001 \
-      --gid 1001 --shell /bin/bash --skel /dev/null kali
+RUN groupadd --gid 1005 kaliweb \
+    && useradd --home-dir /home/kaliweb --create-home --uid 1005 \
+      --gid 1005 --shell /bin/bash --skel /dev/null kaliweb
 
-RUN chown -R kali:kali /home/kali/
+RUN chown -R kaliweb:kaliweb /home/kaliweb/
 
-RUN echo kali:kali | chpasswd
+RUN echo kaliweb:kali | chpasswd
 
-RUN usermod -aG sudo kali
+RUN usermod -aG sudo kaliweb
 
-RUN echo 'kali  ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/kali
+RUN echo 'kaliweb  ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/kaliweb
 
-WORKDIR /home/kali/
+WORKDIR /home/kaliweb/
 
 USER kali
 
