@@ -19,4 +19,4 @@ WORKDIR /home/kaliweb/
 
 USER kaliweb
 
-RUN sudo apt update && sudo apt install -y burpsuite crunch dirb dirsearch ffuf gobuster snmpenum sqlmap wapiti wpscan seclists
+RUN sudo apt update && sudo apt install -y crunch dirb dirsearch ffuf gobuster snmpenum sqlmap wapiti wpscan seclists
