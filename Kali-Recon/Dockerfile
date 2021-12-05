@@ -19,4 +19,8 @@ WORKDIR /home/recon/
 
 USER recon
 
-RUN sudo apt install -y dnsenum dnsrecon nmap spiderfoot amass recon-ng whatweb dnsutils inetutils-tools masscan nbtscan 
+RUN sudo apt install -y nmap inetutils-tools masscan nbtscan 
+
+RUN sudo apt install -y dnsenum dnsrecon dnsutils amass 
+
+RUN sudo apt install -y spiderfoot recon-ng whatweb
