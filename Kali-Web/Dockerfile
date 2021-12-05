@@ -19,7 +19,7 @@ WORKDIR /home/kaliweb/
 
 USER kaliweb
 
-RUN sudo apt install -y fuff gobuster crunch
+RUN sudo apt install -y ffuf gobuster crunch
 
 RUN sudo apt install -y wapiti wpscan 
 
