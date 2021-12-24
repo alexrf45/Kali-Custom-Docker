@@ -1,7 +1,7 @@
 FROM kalilinux/kali-rolling
 
 RUN apt-get update \
-    && apt-get -y install wget curl aria2 man sudo
+    && apt-get -y install wget curl man sudo
 
 RUN groupadd --gid 1004 recon \
     && useradd --home-dir /home/recon --create-home --uid 1004 \
@@ -19,8 +19,8 @@ WORKDIR /home/recon/
 
 USER recon
 
-RUN sudo apt install -y nmap inetutils-tools masscan nbtscan 
+RUN sudo apt install -y nmap inetutils-tools masscan
 
-RUN sudo apt install -y dnsenum dnsrecon dnsutils amass 
+RUN sudo apt install -y dnsenum dnsrecon dnsutils amass
 
-RUN sudo apt install -y spiderfoot recon-ng whatweb
+RUN sudo apt install -y whatweb
