@@ -19,10 +19,8 @@ WORKDIR /home/kaliweb/
 
 USER kaliweb
 
-RUN sudo apt install -y ffuf gobuster crunch
+RUN sudo apt install -y ffuf gobuster crunch seclists dirsearch
 
-RUN sudo apt install -y wapiti wpscan 
-
-RUN sudo apt install -y seclists
+RUN sudo apt install -y wapiti wpscan
 
 RUN sudo apt install -y sqlmap
