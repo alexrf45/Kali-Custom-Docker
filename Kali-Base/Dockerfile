@@ -18,5 +18,3 @@ RUN echo 'kali  ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/kali
 WORKDIR /home/kali/
 
 USER kali
-
-RUN sudo apt install wordlists hydra
