@@ -25,6 +25,6 @@ RUN sudo apt install -y john
 
 RUN sudo apt install -y crackmapexec
 
-RUN sudo apt install -y crunch seclists 
+RUN sudo apt install -y crunch
 
 RUN sudo apt install -y wordlists
