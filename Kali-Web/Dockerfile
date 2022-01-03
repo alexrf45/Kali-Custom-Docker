@@ -23,4 +23,4 @@ RUN sudo apt install -y ffuf gobuster dirsearch
 
 RUN sudo apt install -y wpscan whatweb
 
-RUN sudo apt install seclists
+RUN sudo apt install -y seclists
