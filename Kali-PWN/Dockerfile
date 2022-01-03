@@ -27,4 +27,4 @@ RUN sudo apt install -y crackmapexec
 
 RUN sudo apt install -y crunch seclists 
 
-RUN sudo apt insatll -y wordlists
+RUN sudo apt install -y wordlists
