@@ -23,4 +23,4 @@ RUN sudo apt install -y nmap inetutils-tools masscan
 
 RUN sudo apt install -y dnsenum dnsrecon dnsutils amass
 
-RUN sudo apt install -y whatweb
+RUN sudo apt install -y whatweb snmpenum snmp-mibs-downloader
