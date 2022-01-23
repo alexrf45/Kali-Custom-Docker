@@ -19,4 +19,4 @@ WORKDIR /home/burp/
 
 USER burp
 
-RUN sudo apt update && sudo apt install -y burpsuite seclists
+RUN sudo apt update && sudo apt update && sudo apt install -y burpsuite seclists
