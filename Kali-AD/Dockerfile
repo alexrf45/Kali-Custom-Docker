@@ -21,8 +21,8 @@ USER kali-ad
 
 RUN sudo apt update && sudo apt install -y enum4linux smbclient crackmapexec smbmap
 
-RUN sudo apt install ruby ruby-dev
+RUN sudo apt install -y ruby ruby-dev
 
-RUN sudo apt install evil-winrm
+RUN sudo apt install -y evil-winrm
 
 RUN git clone https://github.com/samratashok/nishang.git
