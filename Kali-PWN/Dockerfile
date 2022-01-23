@@ -19,7 +19,7 @@ WORKDIR /home/pwn/
 
 USER pwn
 
-RUN sudo apt install -y hydra
+RUN sudo apt update && sudo apt install -y hydra
 
 RUN sudo apt install -y john
 
