@@ -19,6 +19,6 @@ WORKDIR /home/kaliwifi/
 
 USER kaliwifi
 
-RUN sudo apt install -y aircrack-ng
+RUN sudo apt update && sudo apt install -y aircrack-ng
 
-RUN sudo apt install -y wordlists
+RUN sudo apt update && sudo apt install -y wordlists

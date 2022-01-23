@@ -19,7 +19,7 @@ WORKDIR /home/kali-ad/
 
 USER kali-ad
 
-RUN sudo apt install -y enum4linux smbclient crackmapexec smbmap
+RUN sudo apt update && sudo apt install -y enum4linux smbclient crackmapexec smbmap
 
 RUN sudo apt install ruby ruby-dev
 
