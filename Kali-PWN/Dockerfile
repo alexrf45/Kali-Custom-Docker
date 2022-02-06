@@ -21,7 +21,7 @@ USER pwn
 
 RUN sudo apt update && sudo apt install -y hydra
 
-RUN sudo apt install -y john
+RUN sudo apt install -y john exiftool djvulibre-bin 
 
 RUN sudo apt install -y crackmapexec
 
