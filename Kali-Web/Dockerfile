@@ -19,8 +19,8 @@ WORKDIR /home/kaliweb/
 
 USER kaliweb
 
-RUN sudo apt update && sudo apt install -y ffuf gobuster dirsearch
+RUN sudo apt update && sudo apt install -y ffuf gobuster
 
-RUN sudo apt update && sudo apt install -y wpscan whatweb
+RUN sudo apt update && sudo apt install -y wpscan
 
 RUN sudo apt install -y seclists
