@@ -3,9 +3,9 @@ FROM kalilinux/kali-rolling
 RUN apt-get update \
     && apt-get -y install wget curl man git sudo
 
-RUN groupadd --gid 1005 kali-ad \
-    && useradd --home-dir /home/kali-ad --create-home --uid 1005 \
-      --gid 1005 --shell /bin/bash --skel /dev/null kali-ad
+RUN groupadd --gid 1004 kali-ad \
+    && useradd --home-dir /home/kali-ad --create-home --uid 1004 \
+      --gid 1004 --shell /bin/bash --skel /dev/null kali-ad
 
 RUN chown -R kali-ad:kali-ad /home/kali-ad/
 
