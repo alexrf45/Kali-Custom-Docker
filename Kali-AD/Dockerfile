@@ -19,6 +19,6 @@ WORKDIR /home/kali-ad/
 
 USER kali-ad
 
-RUN sudo apt update && install -y python3-impacket enum4linux smbclient crackmapexec smbmap ruby ruby-dev evil-winrm
+RUN sudo apt update && sudo apt install -y python3-impacket enum4linux smbclient crackmapexec smbmap ruby ruby-dev evil-winrm
 
 RUN git clone https://github.com/samratashok/nishang.git
