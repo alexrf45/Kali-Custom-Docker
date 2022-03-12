@@ -21,7 +21,7 @@ USER kali
 
 RUN sudo apt update && sudo apt install -y nmap inetutils-tools masscan httprobe dnsenum dnsutils amass
 
-RUN sudo apt update && sudo apt install -y whatweb snmpcheck snmpenum snmp-mibs-downloader ffuf gobuster wpscan burpsuite seclists metasploit-framework
+RUN sudo apt update && sudo apt install -y whatweb snmpcheck snmpenum snmp-mibs-downloader ffuf gobuster wpscan burpsuite seclists metasploit-framework firefox-esr
 
 RUN sudo apt install -y john exiftool djvulibre-bin crackmapexec crunch hydra
 
