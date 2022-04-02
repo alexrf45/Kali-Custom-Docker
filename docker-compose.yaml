@@ -1,8 +1,0 @@
-version: '3.3'
-
-services:
-  kali-main:
-    image: "fonalex45/project-repo-1:kali-base"
-    volumes:
-      - /mnt/kali-share:/share/base
-      - .:/share/engagement
