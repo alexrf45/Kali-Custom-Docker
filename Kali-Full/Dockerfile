@@ -23,7 +23,7 @@ RUN sudo apt update && sudo apt install -y nmap inetutils-tools masscan httprobe
 
 RUN sudo apt update && sudo apt install -y whatweb snmpcheck snmpenum snmp-mibs-downloader ffuf gobuster wpscan burpsuite seclists metasploit-framework firefox-esr sqlmap
 
-RUN sudo apt install -y john exiftool djvulibre-bin crackmapexec crunch hydra
+RUN sudo apt install -y john exiftool djvulibre-bin crackmapexec crunch hydra wordlists
 
 RUN sudo apt update && sudo apt install -y python3-impacket enum4linux smbclient crackmapexec smbmap ruby ruby-dev evil-winrm
 
