@@ -2,17 +2,14 @@
 
 [Docker Hub Image](https://hub.docker.com/repository/docker/fonalex45/project-repo-1)
 
-This is custom repo of kali docker images that save installation time and potential dependencies issues. I add to the images every so often as I discover more tools or find a better alias for a particular container. Please feel free to fork and modify to your liking.
+## Fully Tested on: Debian 11, Arch Linux
 
-## Fully Tested on: Debian 11
-
-## I highly recommend installing this on a lightweight Linux distro to reduce overall VM size. Less complexity = more time for fun!
 
 ##
 
-### UPDATE 2021-11-04:
- - Dockerfiles for each custom image are available. 
-
+### UPDATE 2022-04-24:
+ - Full Kali Image and Kali base image are availiable. Dockerfile clean up complete.  
+ - I have also included a function in the aliases file for quick spin up. It mounts to your pwd on the host for easier handling of files between container and host. 
 
 ## Quick Start:
 
@@ -20,7 +17,7 @@ This is custom repo of kali docker images that save installation time and potent
 
 2. cd Kali-Custom-Docker/
 
-3. cd to desired image directory 
+3. cd to desired image directory (Kali-Full or Kali-Base)
 
 4. docker build -t repo:tag .
 

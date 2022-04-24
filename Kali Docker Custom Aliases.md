@@ -70,3 +70,11 @@ alias evil='docker run -it --rm -w /data -v data:/data fonalex45/project-repo-1:
 alias crunch='docker run -it --rm --name crunch -v data:/data fonalex45/project-repo-1:kali-custom crunch'
 
 alias cme='docker run -it --rm --net=host -v data:/home fonalex45/project-repo-1:kali-custom crackmapexec'
+
+
+#docker kali function
+
+>function kali() {
+    dirname=${PWD##*/}
+    docker run --rm -it --net=host --entrypoint=/bin/bash -v `pwd`:/${dirname} -w /${dirname} fonalex45/project-repo-1:kali-full
+}
