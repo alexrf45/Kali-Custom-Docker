@@ -78,7 +78,7 @@ RUN cp .zshrc .zlogin
 
 RUN touch ~/.hushlogin
 
-CMD zsh
+CMD /usr/bin/zsh
 
 
 
