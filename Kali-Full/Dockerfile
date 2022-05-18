@@ -6,7 +6,10 @@ RUN apt-get update \
     curl \
     man \
     sudo \
-    git
+    git  \
+    zsh  \
+    tmux \
+    ruby
 
 RUN groupadd --gid 1001 kali \
     && useradd --home-dir /home/kali --create-home --uid 1001 \
@@ -61,5 +64,21 @@ RUN sudo apt-get update && sudo apt-get install -y \
 	ruby-dev \ 
 	evil-winrm
 
-
 RUN git clone https://github.com/samratashok/nishang.git
+
+RUN sudo gem install tmuxinator
+
+COPY tmux.conf /home/kali/.tmux.conf
+
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+RUN echo "alias t='tmux -f ~/.tmux.conf'" >> .zshrc
+
+RUN cp .zshrc .zlogin
+
+RUN touch ~/.hushlogin
+
+CMD zsh
+
+
+
