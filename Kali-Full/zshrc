@@ -43,6 +43,6 @@ alias i='sudo apt-get install'
 alias public='curl ifconfig.me'
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
 alias nmap-quick='nmap -sC -sV -p-'
-alias ffuf-quick='ffuf -u $URL -w /usr/share/seclists/Discovery/Web-Content/common.txt' -o results.txt -mc 200 -fs 0'
+alias ffuf-quick='ffuf -u $URL -w /usr/share/seclists/Discovery/Web-Content/common.txt -o results.txt -mc 200 -fs 0'
 
 
