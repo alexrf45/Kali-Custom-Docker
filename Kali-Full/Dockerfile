@@ -72,13 +72,17 @@ COPY tmux.conf /home/kali/.tmux.conf
 
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-RUN echo "alias t='tmux -f ~/.tmux.conf'" >> .zshrc
+COPY zshrc /home/kali/.zshrc
+
+RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 RUN cp .zshrc .zlogin
 
 RUN touch ~/.hushlogin
 
-CMD /usr/bin/zsh
+CMD zsh
 
 
 

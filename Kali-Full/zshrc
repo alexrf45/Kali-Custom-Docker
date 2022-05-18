@@ -1,0 +1,48 @@
+#ssh-agent w/ quiet (optional, set custom key if desired)
+#zstyle :omz:plugins:ssh-agent agent-forwarding yes
+#zstyle :omz:plugins:ssh-agent quiet yes
+#zstyle :omz:plugins:ssh-agent identities ~/.ssh/kali
+
+#place this in plugins to activate ssh-agetn
+#ssh-agent
+
+# Path to your oh-my-zsh installation.
+export ZSH="/home/kali/.oh-my-zsh"
+
+
+#New History file location allows us to back it up to github
+HISTFILE="$HOME/.kali_history"
+HISTSIZE=1000
+SAVEHIST=2000
+
+
+#zsh theme
+ZSH_THEME="minimal"
+
+zstyle ':omz:update' mode auto      # update automatically without asking
+
+plugins=(
+colored-man-pages
+sudo
+zsh-autosuggestions
+zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
+#Custom ENV
+export EDITOR=vim
+
+#daily drivers for day to day tasks
+alias http='sudo python3 -m http.server 80'
+alias reload='. ~/.zshrc'
+alias update='sudo apt-get update'
+alias t='tmux -f ~/.tmux.conf'
+alias zcopy='cp .zshrc .zlogin && cp .zlogin .zprofile'
+alias i='sudo apt-get install'
+alias public='curl ifconfig.me'
+alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
+alias nmap-quick='nmap -sC -sV -p-'
+alias ffuf-quick='ffuf -u $URL -w /usr/share/seclists/Discovery/Web-Content/common.txt' -o results.txt -mc 200 -fs 0'
+
+
