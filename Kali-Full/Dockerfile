@@ -31,6 +31,7 @@ RUN sudo apt-get update && sudo apt-get install -y \
 	netcat-traditional \
 	nmap \
 	inetutils-tools \ 
+	ftp \
 	masscan \ 
 	httprobe \ 
 	dnsenum  \ 
