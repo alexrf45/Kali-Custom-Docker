@@ -42,7 +42,7 @@ alias zcopy='cp .zshrc .zlogin && cp .zlogin .zprofile'
 alias i='sudo apt-get install'
 alias public='curl ifconfig.me'
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
-alias nmap-quick='nmap -sC -sV -p-'
-alias ffuf-quick='ffuf -u $URL -w /usr/share/seclists/Discovery/Web-Content/common.txt -o results.txt -mc 200 -fs 0'
-
+alias nmap-quick='nmap -T4 -sC -sV -Pn -oA /home/kali/$TARGETNAME -p- $TARGETIP'
+alias ffuf-quick='ffuf -u $URL -w /usr/share/seclists/Discovery/Web-Content/common.txt -o /home/kali/results.txt -mc 200 -fs 0'
+alias whatweb-quick='whatweb $URL'
 
