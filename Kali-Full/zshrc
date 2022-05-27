@@ -17,7 +17,7 @@ SAVEHIST=2000
 
 
 #zsh theme
-ZSH_THEME="minimal"
+ZSH_THEME="fino-time"
 
 zstyle ':omz:update' mode auto      # update automatically without asking
 
