@@ -1,4 +1,4 @@
-cd#ssh-agent w/ quiet (optional, set custom key if desired)
+#ssh-agent w/ quiet (optional, set custom key if desired)
 #zstyle :omz:plugins:ssh-agent agent-forwarding yes
 #zstyle :omz:plugins:ssh-agent quiet yes
 #zstyle :omz:plugins:ssh-agent identities ~/.ssh/kali
