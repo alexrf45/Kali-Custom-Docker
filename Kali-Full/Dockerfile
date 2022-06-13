@@ -9,7 +9,9 @@ RUN apt-get update \
     git  \
     zsh  \
     tmux \
-    ruby
+    ruby \
+    vim  \
+    nano \
 
 RUN groupadd --gid 1001 kali \
     && useradd --home-dir /home/kali --create-home --uid 1001 \
