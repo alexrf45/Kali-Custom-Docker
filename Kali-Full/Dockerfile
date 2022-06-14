@@ -11,7 +11,8 @@ RUN apt-get update \
     tmux \
     ruby \
     vim  \
-    nano
+    nano \
+    python3-pip
 
 RUN groupadd --gid 1001 kali \
     && useradd --home-dir /home/kali --create-home --uid 1001 \
