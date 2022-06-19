@@ -17,7 +17,7 @@ SAVEHIST=2000
 
 
 #zsh theme
-ZSH_THEME="jonathan"
+ZSH_THEME="cloud"
 
 zstyle ':omz:update' mode auto      # update automatically without asking
 
