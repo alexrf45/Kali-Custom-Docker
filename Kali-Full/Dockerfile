@@ -46,11 +46,9 @@ RUN sudo apt-get update && sudo apt-get install -y \
 	snmp-mibs-downloader \
 	ffuf \
 	gobuster \
-	wpscan \
 	burpsuite \
 	seclists \
 	metasploit-framework \
-	firefox-esr \
 	sqlmap \
 	john \
 	exiftool \
@@ -60,7 +58,6 @@ RUN sudo apt-get update && sudo apt-get install -y \
 	hydra \
 	wordlists \
 	python3-impacket \ 
-	enum4linux \
 	smbclient \
 	crackmapexec \
 	smbmap \
