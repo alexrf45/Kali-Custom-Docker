@@ -14,7 +14,16 @@ export ZSH="/home/kali/.oh-my-zsh"
 HISTFILE="$HOME/.kali_history"
 HISTSIZE=1000
 SAVEHIST=2000
+HISTSTAMPS="mm/dd/yyyy"
+setopt EXTENDED_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt HIST_SAVE_NO_DUPS
+setopt INC_APPEND_HISTORY_TIME
 
+#history log function
+    precmd() { eval 'if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history -f)" >> ~/.logs/zsh-history-$(date "+%Y-%m-%d").log; fi' }
+    
 
 #zsh theme
 ZSH_THEME="cloud"
