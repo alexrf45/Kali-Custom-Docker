@@ -37,6 +37,7 @@ RUN sudo apt-get update && sudo apt-get install -y \
 	nmap \
 	inetutils-tools \ 
 	ftp \
+	telnet \
 	masscan \ 
 	httprobe \ 
 	dnsenum  \ 
