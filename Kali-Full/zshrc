@@ -26,7 +26,7 @@ setopt INC_APPEND_HISTORY_TIME
     
 
 #zsh theme
-ZSH_THEME="agnoster"
+ZSH_THEME="candy"
 
 zstyle ':omz:update' mode auto      # update automatically without asking
 
